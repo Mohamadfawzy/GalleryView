@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:gallery="clr-namespace:GalleryView.Views.ContentViews"
+             x:Class="GalleryView.MainPage"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Name="this">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label"
+                   x:Key="langLabel">
+                <Setter Property="FontSize"
+                        Value="18" />
+                <Setter Property="TextColor"
+                        Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid RowDefinitions="40,*">
+        <StackLayout Orientation="Horizontal"
+                     BackgroundColor="Gainsboro"
+                     Padding="5">
+            <Label Text="عربي"
+                   x:Name="labelAR"
+                   Style="{StaticResource langLabel}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapChangeLangauge"
+                                          CommandParameter="ar"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="EN"
+                   x:Name="labelEN"
+                   Style="{StaticResource langLabel}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapChangeLangauge"
+                                          CommandParameter="en" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+        <Grid Grid.Row="1">
+            <gallery:Gallery1 x:Name="gallery1"
+                              WidthRequest="{Binding Source={Reference this}, Path=Width}"
+                              BackgroundColor="Crimson" />
+            <gallery:Gallery1 x:Name="gallery2"
+                              WidthRequest="{Binding Source={Reference this}, Path=Width}"
+                              TranslationX="{Binding Source={Reference this}, Path=Width}"
+                              BackgroundColor="DarkCyan" />
+            <gallery:Gallery1 x:Name="gallery3"
+                              WidthRequest="{Binding Source={Reference this}, Path=Width}"
+                              TranslationX="{Binding Source={Reference this}, Path=Width}"
+                              BackgroundColor="BlanchedAlmond" />
+        </Grid>
+        
+        <!-- Buttons -->
+        <StackLayout Padding="20,10" Orientation="Horizontal"
+                     Grid.Row="1"
+                     VerticalOptions="End">
+            <Button  Text="{xct:Translate MainPage_Btn_Previous}"
+                     Clicked="ButtonPrevious"
+                     CornerRadius="10"
+                     HorizontalOptions="Start" />
+            <Button Text="{xct:Translate MainPage_Btn_Next}"
+                    Clicked="ButtonNext"
+                    CornerRadius="10"
+                    HorizontalOptions="Start"/>
+            
+        </StackLayout>
+        
+    </Grid>
+
+</ContentPage>

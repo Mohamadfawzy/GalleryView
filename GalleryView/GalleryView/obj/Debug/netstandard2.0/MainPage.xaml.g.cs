@@ -20,12 +20,6 @@ namespace GalleryView {
         private global::Xamarin.Forms.ContentPage @this;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label labelAR;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Label labelEN;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::GalleryView.Views.ContentViews.Gallery1 gallery1;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
@@ -38,8 +32,6 @@ namespace GalleryView {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
             @this = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "this");
-            labelAR = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "labelAR");
-            labelEN = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "labelEN");
             gallery1 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::GalleryView.Views.ContentViews.Gallery1>(this, "gallery1");
             gallery2 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::GalleryView.Views.ContentViews.Gallery1>(this, "gallery2");
             gallery3 = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::GalleryView.Views.ContentViews.Gallery1>(this, "gallery3");

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YPiFlx6CLG+NKWfRmE89s73J4DYRPgLHHThNnA5l2y8j1udCph/SukmNEmK+ftYOR+Cb4jU3OB59Hww5bo0tCA==",
+  "dgSpecHash": "EM9lWMDrg/W/5OQtpggOgc2sJGfDXiakHd7wVMl667Y96RGHVotE7+DbABoy+ecu1AiAtXtIvdDKRDIC5XaMBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.iOS\\GalleryView.iOS.csproj",
+  "projectFilePath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.iOS\\GalleryView.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Programmer\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.0\\xamarin.communitytoolkit.1.3.0.nupkg.sha512",

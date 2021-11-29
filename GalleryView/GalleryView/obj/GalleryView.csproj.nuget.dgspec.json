@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {}
+    "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {
+    "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj",
+        "projectUniqueName": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj",
         "projectName": "GalleryView",
-        "projectPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj",
+        "projectPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj",
         "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\obj\\",
+        "outputPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

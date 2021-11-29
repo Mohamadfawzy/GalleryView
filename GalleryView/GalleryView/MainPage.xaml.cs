@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GalleryView.Helper;
+using GalleryView.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
@@ -21,11 +23,16 @@ namespace GalleryView
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
             CurrnentVisualElement = this;
             PreviousVisualElement = new StackLayout();
             this.SizeChanged += MainPage_SizeChanged;
+            HandelDireciton();
         }
-
         private void MainPage_SizeChanged(object sender, EventArgs e)
         {
             widthDevice = this.Width;
@@ -35,29 +42,9 @@ namespace GalleryView
         }
 
         // Taps Events
-        private void TapChangeLangauge(object sender, EventArgs e)
+        private void TapGoToSettingsPage(object sender, EventArgs e)
         {
-            var label = sender as Label;
-            if (label.Text == "عربي")
-            {
-                labelAR.TextColor = Color.Crimson;
-                labelEN.TextColor = Color.Black;
-                CurrnetDirection = 'r';
-                CurrnentVisualElement.TranslationX = 0;
-                PreviousVisualElement.TranslationX = -widthDevice;
-                LocalizationResourceManager.Current.CurrentCulture = new CultureInfo("ar");
-                this.FlowDirection = FlowDirection.RightToLeft;
-            }
-            else
-            {
-                labelEN.TextColor = Color.Crimson;
-                labelAR.TextColor = Color.Black;
-                CurrnetDirection = 'l';
-                CurrnentVisualElement.TranslationX = 0;
-                PreviousVisualElement.TranslationX = widthDevice;
-                LocalizationResourceManager.Current.CurrentCulture = new CultureInfo("en");
-                this.FlowDirection = FlowDirection.LeftToRight;
-            }
+            Navigation.PushAsync(new ChangeLanguagePage());
         }
 
         // Buttons Events
@@ -108,6 +95,21 @@ namespace GalleryView
             }
         }
 
+        void HandelDireciton()
+        {
+            if (Helper.HandelLanguage.Currnetlanguage() == "ar")
+            {
+                CurrnetDirection = 'r';
+                CurrnentVisualElement.TranslationX = 0;
+                PreviousVisualElement.TranslationX = -widthDevice;
+            }
+            else
+            {
+                CurrnetDirection = 'l';
+                CurrnentVisualElement.TranslationX = 0;
+                PreviousVisualElement.TranslationX = widthDevice;
+            }
+        }
         #region Animation
 
         // Next ANIMATION
@@ -117,7 +119,10 @@ namespace GalleryView
             var an = new Animation();
             var endView1 = direction == 'l' ? -widthDevice : widthDevice;
             var startView2 = direction == 'l' ? widthDevice : -widthDevice;
-            view1.TranslationX = 0;
+
+            //view2.TranslationX = endView1;
+            //view2.IsVisible = true;
+           // an.Add(0, 0.1, new Animation(v => view1.Scale = v, 1, 0.9, Easing.SinIn));
             an.Add(0, 1, new Animation(v => view1.TranslationX = v, 0, endView1, Easing.SinIn));
             an.Add(0, 1, new Animation(v => view2.TranslationX = v, startView2, 0, Easing.SinIn));
 
@@ -125,6 +130,7 @@ namespace GalleryView
                  finished: (x, c) =>
                  {
                      //taskCompletionSource.SetResult(c);
+                     //view1.Scale = 1;
                  });
             CurrnentVisualElement = view2;
             PreviousVisualElement = view1;
@@ -140,6 +146,9 @@ namespace GalleryView
 
             var endView1 = direction == 'l' ? widthDevice : -widthDevice;
             var startView2 = direction == 'l' ? -widthDevice : widthDevice;
+            
+            //view1.TranslationX = endView1;
+            //view1.IsVisible = true;
 
             an.Add(0, 1, new Animation(v => view1.TranslationX = v, 0, endView1, Easing.SinIn));
             an.Add(0, 1, new Animation(v => view2.TranslationX = v, startView2, 0, Easing.SinIn));
@@ -148,12 +157,15 @@ namespace GalleryView
                  finished: (x, c) =>
                  {
                      //taskCompletionSource.SetResult(c);
+                     //view2.IsVisible = false;
+                     
                  });
             CurrnentVisualElement = view2;
             PreviousVisualElement = view1;
             taskCompletionSource.SetResult(true);
             return await taskCompletionSource.Task;
         }
+
         #endregion
 
 

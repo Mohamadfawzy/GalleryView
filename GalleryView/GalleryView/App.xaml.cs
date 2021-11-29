@@ -13,7 +13,7 @@ namespace GalleryView
             InitializeComponent();
             LocalizationResourceManager.Current.PropertyChanged += (r, s) => AppResources.Culture = LocalizationResourceManager.Current.CurrentCulture;
             LocalizationResourceManager.Current.Init(AppResources.ResourceManager);
-            MainPage = new MainPage();
+            MainPage = new NavigationPage( new MainPage());
             //MainPage.FlowDirection = FlowDirection.RightToLeft;
         }
 

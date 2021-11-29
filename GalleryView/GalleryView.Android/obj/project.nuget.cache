@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YTnKervIC1e9JekmxoSUaPSZaM5THfxxqoJ8/e/UmhpS3uCMh4kVOqrpKt2KPHeTw39ko1gUh2rp1UwvKPz8sQ==",
+  "dgSpecHash": "BK1OV9O2iocOfa4m22VX7+NRzB49Svsx0KvhWy6B1zJ2taxCJPG4jHKSS6UZRTOVjhZTuMmpLeSBzdY2HD0Qfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.Android\\GalleryView.Android.csproj",
+  "projectFilePath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.Android\\GalleryView.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Programmer\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

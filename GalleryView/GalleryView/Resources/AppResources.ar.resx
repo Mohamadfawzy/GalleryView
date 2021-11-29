@@ -123,4 +123,10 @@
   <data name="MainPage_Btn_Previous" xml:space="preserve">
     <value>السابق</value>
   </data>
+  <data name="MainPage_Settings" xml:space="preserve">
+    <value>الاعدادات</value>
+  </data>
+  <data name="MainPage_WelcomText" xml:space="preserve">
+    <value>مرحبا</value>
+  </data>
 </root>

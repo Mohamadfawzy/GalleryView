@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e0qXjlQRcQEX0hGa9iUbswDimPoSQYM6KzlQLZUayRpxzjsv1ZyuG0gkTbTA5Kj5wky4EGFnJ3XgWoWxanXqAQ==",
+  "dgSpecHash": "bzxKajt+ulGs6ci3li751RomAXsdyhSOvkujtI47T/ksv+DIAiSKA2NN4EDOchDCF68bLxfzcKQYNeGuK8tETw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj",
+  "projectFilePath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Programmer\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Programmer\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -3241,11 +3241,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.Android\\GalleryView.Android.csproj",
+      "projectUniqueName": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.Android\\GalleryView.Android.csproj",
       "projectName": "GalleryView.Android",
-      "projectPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.Android\\GalleryView.Android.csproj",
+      "projectPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.Android\\GalleryView.Android.csproj",
       "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.Android\\obj\\",
+      "outputPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3268,8 +3268,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {
-              "projectPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj"
+            "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {
+              "projectPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj"
             }
           }
         }

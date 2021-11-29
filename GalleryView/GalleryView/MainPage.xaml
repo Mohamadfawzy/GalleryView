@@ -4,36 +4,16 @@
              xmlns:gallery="clr-namespace:GalleryView.Views.ContentViews"
              x:Class="GalleryView.MainPage"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             NavigationPage.HasNavigationBar="False"
              x:Name="this">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Label"
-                   x:Key="langLabel">
-                <Setter Property="FontSize"
-                        Value="18" />
-                <Setter Property="TextColor"
-                        Value="Black" />
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
+    
     <Grid RowDefinitions="40,*">
         <StackLayout Orientation="Horizontal"
                      BackgroundColor="Gainsboro"
                      Padding="5">
-            <Label Text="عربي"
-                   x:Name="labelAR"
-                   Style="{StaticResource langLabel}">
+            <Label Text="{xct:Translate MainPage_Settings}">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapChangeLangauge"
-                                          CommandParameter="ar"/>
-                </Label.GestureRecognizers>
-            </Label>
-            <Label Text="EN"
-                   x:Name="labelEN"
-                   Style="{StaticResource langLabel}">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapChangeLangauge"
-                                          CommandParameter="en" />
+                    <TapGestureRecognizer Tapped="TapGoToSettingsPage" />
                 </Label.GestureRecognizers>
             </Label>
         </StackLayout>

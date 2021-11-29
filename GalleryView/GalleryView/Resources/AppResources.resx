@@ -123,4 +123,10 @@
   <data name="MainPage_Btn_Previous" xml:space="preserve">
     <value>Previous</value>
   </data>
+  <data name="MainPage_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MainPage_WelcomText" xml:space="preserve">
+    <value>Welcom</value>
+  </data>
 </root>

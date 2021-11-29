@@ -1108,11 +1108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.iOS\\GalleryView.iOS.csproj",
+      "projectUniqueName": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.iOS\\GalleryView.iOS.csproj",
       "projectName": "GalleryView.iOS",
-      "projectPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.iOS\\GalleryView.iOS.csproj",
+      "projectPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.iOS\\GalleryView.iOS.csproj",
       "packagesPath": "C:\\Users\\Programmer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView.iOS\\obj\\",
+      "outputPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1135,8 +1135,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {
-              "projectPath": "C:\\Users\\Programmer\\source\\repos\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj"
+            "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj": {
+              "projectPath": "C:\\FawzySource\\GalleryView\\GalleryView\\GalleryView\\GalleryView.csproj"
             }
           }
         }

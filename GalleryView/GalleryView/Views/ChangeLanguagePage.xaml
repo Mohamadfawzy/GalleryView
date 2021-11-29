@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GalleryView.Views.ChangeLanguagePage"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label"
+                   x:Key="langLabel">
+                <Setter Property="FontSize"
+                        Value="20" />
+                <Setter Property="TextColor"
+                        Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal"
+                     BackgroundColor="Gainsboro"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     Padding="20">
+            <Label Text="عربي"
+                   x:Name="labelAR"
+                   Style="{StaticResource langLabel}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapChangeLangauge"
+                                          CommandParameter="ar" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="EN"
+                   x:Name="labelEN"
+                   Style="{StaticResource langLabel}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapChangeLangauge"
+                                          CommandParameter="en" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -77,5 +77,23 @@ namespace GalleryView.Resources {
                 return ResourceManager.GetString("MainPage_Btn_Previous", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string MainPage_Settings {
+            get {
+                return ResourceManager.GetString("MainPage_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcom.
+        /// </summary>
+        internal static string MainPage_WelcomText {
+            get {
+                return ResourceManager.GetString("MainPage_WelcomText", resourceCulture);
+            }
+        }
     }
 }
